@@ -1,0 +1,5 @@
+Sample data with missing values
+1, 2, 3
+4, NA, 6
+7, ?, 9
+10, 11, --
