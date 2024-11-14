@@ -1,0 +1,48 @@
+<pre class="prettyprint linenums">
+
+import pandas as pd
+
+# We have a roller_coasters.csv CSV file with 4 columns: Name, Park, Country, and Height.
+# You can explore the data by clicking into the CSV file on the left
+# Import the CSV file into a pandas Series object
+# The Series should have the standard pandas numeric index
+# The Series values should be the string values from the "Name" column
+# Assign the Series object to a "coasters" variable
+
+
+# I only want to ride the top 3 roller coasters on the list.
+# Starting with the "coasters" Series, extract the first 3 rows in a new Series.
+# Assign the new Series to a "top_three" variable.
+
+
+# I'm now curious about some of the last entries on the coaster list.
+# Starting with the "coasters" Series, extract the last 4 rows in a new Series.
+# Assign the new Series to a "bottom_four" variable.
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+coasters = pd.read_csv("roller_coasters.csv", usecols = ["Name"]).squeeze("columns")
+
+top_three = coasters.head(3)
+bottom_four = coasters.tail(4)

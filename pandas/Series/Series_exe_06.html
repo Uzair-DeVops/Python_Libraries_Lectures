@@ -1,0 +1,43 @@
+<pre class="prettyprint linenums">
+import pandas as pd
+
+# Below, we have a list of delicious tortilla chip flavors
+flavors = ["Spicy Sweet Chili", "Cool Ranch", "Nacho Cheese", "Salsa Verde"]
+
+# Create a new Series object, passing in the flavors list defined above
+# Assign it to a 'doritos' variable. The resulting Series should look like this:
+#
+#
+#   0    Spicy Sweet Chili
+#   1           Cool Ranch
+#   2         Nacho Cheese
+#   3          Salsa Verde
+#   dtype: object
+
+# Below, sort the doritos Series in descending order.
+# Assign the sorted a Series to a 'sorted_doritos' variable.
+# The sorted Series should like this:
+#
+#   0    Spicy Sweet Chili
+#   3          Salsa Verde
+#   2         Nacho Cheese
+#   1           Cool Ranch
+#   dtype: object
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+doritos = pd.Series(flavors)
+sorted_doritos = doritos.sort_values(ascending = False)

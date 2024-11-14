@@ -1,0 +1,38 @@
+<pre class="prettyprint linenums">
+
+# The code below defines a list of delicious foods
+# and some dipping sauces to dip them in
+import pandas as pd
+
+foods = ["French Fries", "Chicken Nuggets", "Celery", "Carrots"]
+dipping_sauces = ["BBQ", "Honey Mustard", "Ranch", "Sriracha"]
+
+# Create a Series and assign it to the s1 variable below. 
+# Assign the foods list as the data source
+# and the dipping_sauces list as the Series index 
+# For this solution, use positional arguments (i.e. feed in the arguments sequentially)
+
+
+# Create a Series and assign it to the s2 variable below. 
+# Assign the dipping_sauces list as the data source
+# and the foods list as the Series index 
+# For this solution, use keyword arguments (i.e. provide the parameter names
+# alongside the arguments)
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+s1 = pd.Series(foods, dipping_sauces)
+s2 = pd.Series(data = dipping_sauces, index = foods)

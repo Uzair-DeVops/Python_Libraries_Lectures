@@ -1,0 +1,40 @@
+<pre class="prettyprint linenums">
+
+# The data.csv file contains a dataset of random numbers.
+# The dataset has 4 columns: A, B, C, and D.
+# Import pandas and use it to parse the CSV.
+# Assign the imported DataFrame to a variable called 'data'.
+
+import pandas as pd
+
+# Filter the dataset to remove rows where ALL the
+# values are missing. Assign the resulting DataFrame
+# to a "no_empty_rows" variable.
+
+
+# Filter the dataset to remove rows that have a missing value
+# in either the "B" or "D" columns.
+# Assign the resulting DataFrame to a "result" variable.
+
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+data = pd.read_csv("data.csv")
+no_empty_rows = data.dropna(how = "all")
+result = data.dropna(subset = ["B", "D"])

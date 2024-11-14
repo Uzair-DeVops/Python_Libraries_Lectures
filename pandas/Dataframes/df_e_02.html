@@ -1,0 +1,39 @@
+<pre class="prettyprint linenums"># 
+
+import pandas as pd 
+
+# This challenge includes a "chicken_restaurants.csv" dataset with 6 columns:
+# Name, Original Location, Year, Headquarters, Locations, Areas Served
+# Import the CSV into a DataFrame and assign it to a "chicken" variable.
+
+# Extract the "Year" and "Locations" columns (in that order) into
+# their own DataFrame. Assign the DataFrame to a "years_and_locations" variable.
+
+# Extract the "Locations", "Name", and "Headquarters" columns (in that order)
+# into their own DataFrame. Assign the DataFrame to a 
+# "interesting_facts" variable.
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+chicken = pd.read_csv("chicken_restaurants.csv")
+years_and_locations = chicken[["Year", "Locations"]]
+interesting_facts = chicken[["Locations", "Name", "Headquarters"]]

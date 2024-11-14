@@ -1,0 +1,55 @@
+<pre class="prettyprint linenums"># 
+
+# This challenge includes a s&amp;p500.csv with 6 columns: 
+# Symbol, Security, Sector, Industry, HQ, Founded
+# Import the s&amp;p500.csv DataFrame and assign it to
+# a companies variable.
+
+# Sort the DataFrame by the values in the "Industry" column in ascending order
+# Assign the new DataFrame to a "by_industry" variable.
+
+# Sort the DataFrame by the values in the "HQ" column in descending order
+# Assign the new DataFrame to a "by_headquarters_descending" variable.
+
+# Sort the DataFrame by two conditions:
+#  - by the values in the "Sector" column in descending order
+#  - THEN by the values in the "Security" column in ascending order
+# Assign the new DataFrame to a 'by_sector_and_security' variable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+companies = pd.read_csv("s&amp;p500.csv")
+by_industry = companies.sort_values("Industry", ascending = True)
+by_headquarters_descending = companies.sort_values("HQ", ascending = False)
+by_sector_and_security = companies.sort_values(["Sector", "Security"], ascending = [False, True])</pre>

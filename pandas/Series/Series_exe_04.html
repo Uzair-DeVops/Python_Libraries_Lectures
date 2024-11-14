@@ -1,0 +1,49 @@
+<pre class="prettyprint linenums">
+
+import pandas as pd
+
+# We have a foods.csv CSV file with 3 columns: Item Number, Menu Item, Price
+# You can explore the data by clicking into the foods.csv file on the left
+# Import the CSV file into a pandas Series object
+# The Series should have the standard pandas numeric index
+# The Series values should be the string values from the "Menu Item" column
+# Assign the Series object to a "foods" variable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+foods = pd.read_csv("foods.csv", usecols = ["Menu Item"]).squeeze("columns")</pre>

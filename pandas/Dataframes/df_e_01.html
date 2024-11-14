@@ -1,0 +1,32 @@
+<pre class="prettyprint linenums"># 
+
+import pandas as pd 
+
+# This challenge includes a cruise_ships.csv with 4 columns: 
+# Name, Operator, Year, and Tonnage
+# Import the cruise_ships.csv DataFrame and assign it to
+# a cruise_ships variable
+
+# Extract the "Operator" column from the DataFrame
+# and assign it to an "operators" variable.
+
+# Extract the "Tonnage" column from the DataFrame
+# and assign it to an "tonnages" variable.
+tonnages = cruise_ships["Tonnage"]
+
+# Extract the "Name" column from the DataFrame
+# and assign it to an "cruise_names" variable.
+</pre>
+
+
+
+
+
+
+
+
+
+
+cruise_ships = pd.read_csv("cruise_ships.csv")
+operators = cruise_ships["Operator"]
+cruise_names = cruise_ships["Name"]

@@ -1,0 +1,52 @@
+<pre class="prettyprint linenums">
+# Import the pandas library and assign it an alias of 'pd'.
+import pandas as pd
+
+# Import the health.csv file and assign it to a 'health' variable.
+# The resulting DataFrame will have 3 columns: Weight, Height, and Blood Type
+# Convert the values in the Weight Series to strings and overwrite the original column
+# Convert the values in the Height Series to integers and overwrite the original column
+# Convert the values in the Blood Type Series to categories and overwrite the original column
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+health = pd.read_csv("health.csv")
+health["Weight"] = health["Weight"].astype(str)
+health["Height"] = health["Height"].astype(int)
+health["Blood Type"] = health["Blood Type"].astype("category")

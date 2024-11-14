@@ -1,0 +1,58 @@
+<pre class="prettyprint linenums">
+
+import pandas as pd
+
+# This challenge includes a coffee.csv with 2 columns: 
+# Coffee and Calories. Import the CSV. Assign the Coffee
+# column to be the index and the Calories column to be the
+# Series' values. Assign the Series to a 'coffee' variable.
+
+# Check whether the coffee 'Flat White' is present in the data.
+# Assign the result to a `flat_white` variable
+
+# Check whether the coffee 'Cortado' is present in the data.
+# Assign the result to a `cortado` variable
+
+# Check whether the coffee 'Blackberry Mocha' is present in the data.
+# Assign the result to a `blackberry_mocha` variable
+
+# Check whether the value 221 is present in the data.
+# Assign the result to a 'high_calorie' variable.
+
+# Check whether the value 400 is present in the data.
+# Assign the result to a 'super_high_calorie' variable.
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+coffee = pd.read_csv("coffee.csv", index_col = "Coffee").squeeze("columns")
+flat_white = "Flat White" in coffee.index
+cortado = "Cortado" in coffee.index
+blackberry_mocha = "Blackberry Mocha" in coffee.index
+high_calorie = 221 in coffee.values
+super_high_calorie = 400 in coffee.values
